@@ -11,8 +11,23 @@
   inputs.src-glew-master.ref   = "refs/heads/master";
   inputs.src-glew-master.owner = "jyapayne";
   inputs.src-glew-master.repo  = "nim-glew";
-  inputs.src-glew-master.dir   = "";
   inputs.src-glew-master.type  = "github";
+  
+  inputs."github.com/jyapayne/nimterop".owner = "nim-nix-pkgs";
+  inputs."github.com/jyapayne/nimterop".ref   = "master";
+  inputs."github.com/jyapayne/nimterop".repo  = "github.com/jyapayne/nimterop";
+  inputs."github.com/jyapayne/nimterop".dir   = "";
+  inputs."github.com/jyapayne/nimterop".type  = "github";
+  inputs."github.com/jyapayne/nimterop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/jyapayne/nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/jyapayne/nim-glfw".owner = "nim-nix-pkgs";
+  inputs."github.com/jyapayne/nim-glfw".ref   = "master";
+  inputs."github.com/jyapayne/nim-glfw".repo  = "github.com/jyapayne/nim-glfw";
+  inputs."github.com/jyapayne/nim-glfw".dir   = "";
+  inputs."github.com/jyapayne/nim-glfw".type  = "github";
+  inputs."github.com/jyapayne/nim-glfw".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/jyapayne/nim-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
