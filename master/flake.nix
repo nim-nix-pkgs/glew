@@ -11,6 +11,7 @@
   inputs.src-glew-master.ref   = "refs/heads/master";
   inputs.src-glew-master.owner = "jyapayne";
   inputs.src-glew-master.repo  = "nim-glew";
+  inputs.src-glew-master.dir   = "";
   inputs.src-glew-master.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
