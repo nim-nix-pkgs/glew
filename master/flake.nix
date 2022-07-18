@@ -13,21 +13,21 @@
   inputs.src-glew-master.repo  = "nim-glew";
   inputs.src-glew-master.type  = "github";
   
-  inputs."github.com/jyapayne/nimterop".owner = "nim-nix-pkgs";
-  inputs."github.com/jyapayne/nimterop".ref   = "master";
-  inputs."github.com/jyapayne/nimterop".repo  = "github.com/jyapayne/nimterop";
-  inputs."github.com/jyapayne/nimterop".dir   = "";
-  inputs."github.com/jyapayne/nimterop".type  = "github";
-  inputs."github.com/jyapayne/nimterop".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github.com/jyapayne/nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github-jyapayne-nimterop".owner = "nim-nix-pkgs";
+  inputs."github-jyapayne-nimterop".ref   = "master";
+  inputs."github-jyapayne-nimterop".repo  = "github-jyapayne-nimterop";
+  inputs."github-jyapayne-nimterop".dir   = "v0_4_4";
+  inputs."github-jyapayne-nimterop".type  = "github";
+  inputs."github-jyapayne-nimterop".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-jyapayne-nimterop".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."github.com/jyapayne/nim-glfw".owner = "nim-nix-pkgs";
-  inputs."github.com/jyapayne/nim-glfw".ref   = "master";
-  inputs."github.com/jyapayne/nim-glfw".repo  = "github.com/jyapayne/nim-glfw";
-  inputs."github.com/jyapayne/nim-glfw".dir   = "";
-  inputs."github.com/jyapayne/nim-glfw".type  = "github";
-  inputs."github.com/jyapayne/nim-glfw".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github.com/jyapayne/nim-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github-jyapayne-nim-glfw".owner = "nim-nix-pkgs";
+  inputs."github-jyapayne-nim-glfw".ref   = "master";
+  inputs."github-jyapayne-nim-glfw".repo  = "github-jyapayne-nim-glfw";
+  inputs."github-jyapayne-nim-glfw".dir   = "master";
+  inputs."github-jyapayne-nim-glfw".type  = "github";
+  inputs."github-jyapayne-nim-glfw".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-jyapayne-nim-glfw".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
